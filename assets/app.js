@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
     // Initial Buttons
-    var array = ["Cardi B", "City Girls", "Kali Uchis", "Nicki Minaj", "Normani"];
+    var topics = ["Cardi B", "City Girls", "Doja Cat", "Kali Uchis", "Mariah Carey", "Nicki Minaj", "Normani", "Rihanna", "Saweetie"];
     
     // Create Buttons
     function renderButtons() {
-        for (var i = 0; i < array.length; i++) {
+        for (var i = 0; i < topics.length; i++) {
             var button = $("<button>");
-            button.html(array[i]);
+            button.html(topics[i]);
             button.addClass("button btn btn-outline-light");
-            button.attr("data-name", array[i]);
+            button.attr("data-name", topics[i]);
             $("#buttondiv").append(button);
         }
     }
@@ -18,10 +18,13 @@ $(document).ready(function() {
     $("#addButton").on("click", function() {
         event.preventDefault();
         var newButton = $("#userInput").val();
-        array.push(newButton);
+        topics.push(newButton);
         $("#buttondiv").empty();
         renderButtons();
     })
+
+
+    
     
     // click event for movie button
     $("#buttondiv").on("click", ".button", function() {
@@ -63,13 +66,13 @@ $(document).ready(function() {
                 div.append(img);
                 div.append(p);
                 div.addClass("gif-div");
-                $("#gifdiv").prepend(div);
+                $("#content").prepend(div);
             }
         })
     })
     
     //change state of giphy and animate when clicked
-    $("#gifdiv").on("click", ".imgClick", function() {
+    $("#content").on("click", ".imgClick", function() {
     
         var state = $(this).attr("data-state");
     

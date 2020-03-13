@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <!-- Jumbotron -->
     <div class="container pt-4">
       <!-- Jumbotron -->
       <div class="jumbotron">
@@ -23,30 +24,28 @@
         <h1>GifTastic</h1>
         <!-- Line Break -->
         <hr class="my-4" />
-        <!-- Line Break -->
+        <!-- Buttons -->
         <div id="buttondiv"></div>
         <!-- Line Break -->
         <hr class="my-4" />
-
-
-        <!-- Form Button -->
-        <form id="userInput" class="form-inline">
-          <!-- Input Box -->
+        <!-- Inline Form -->
+        <form class="form-inline">
+          <!-- Form Box -->
           <div class="form-group mx-sm-3 mb-2">
-            <input class="form-control" type="text" placeholder="add more...">
+            <input type="text" id="userInput" placeholder="add more...">
           </div>
-          <!-- Button -->
-          <button id= "addButton" type="submit" class="submit btn btn-light mb-2">
-            Add New Button
-          </button>
+          <!-- Submit Button -->
+          <div class=" submit form-group mx-sm-3 mb-2">
+            <input id="addButton" type="submit" value="add more..." class="btn btn-light">
+          </div>
         </form>
       </div>
-
-      <!-- Gif Div -->
-      <div class="row">
-        <div class="col-md-8" id="gifdiv"></div>
-      </div>
+          
+    <!-- Gif Div -->
+    <div class="container-fluid">
+      <div id="content"></div>
     </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/app.js"></script>
   </body>
