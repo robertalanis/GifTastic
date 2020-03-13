@@ -11,29 +11,43 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
   <body>
-    <h1>Giphy Girl Power</h1>
-    <div class="container">
-      <div id="buttondiv"></div>
-    </div>
-    <div class="container">
+    <div class="container pt-4">
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <!-- Title -->
+        <h1>GifTastic</h1>
+        <!-- Line Break -->
+        <hr class="my-4" />
+        <!-- Line Break -->
+        <div id="buttondiv"></div>
+        <!-- Line Break -->
+        <hr class="my-4" />
+
+
+        <!-- Form Button -->
+        <form id="userInput" class="form-inline">
+          <!-- Input Box -->
+          <div class="form-group mx-sm-3 mb-2">
+            <input class="form-control" type="text" placeholder="add more...">
+          </div>
+          <!-- Button -->
+          <button id= "addButton" type="submit" class="submit btn btn-light mb-2">
+            Add New Button
+          </button>
+        </form>
+      </div>
+
+      <!-- Gif Div -->
       <div class="row">
         <div class="col-md-8" id="gifdiv"></div>
-        <div class="col-md-4" id="searchdiv">
-          <form id="form">
-            <label for="input">Add a Star</label>
-            <input type="text" id="input" /><br />
-            <input
-              id="add-show"
-              type="submit"
-              value="Add a Star"
-              class="btn btn-danger"
-            />
-          </form>
-        </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/app.js"></script>
   </body>
 </html>

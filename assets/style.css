@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: floralwhite;
+}
+
+h1 {
+    color: floralwhite;
+}
+
+.jumbotron {
+    background-color: fuchsia;
+}
+
+button {
+    margin: 2px;
+    float: center;
+}
+
+.form-inline {
+    margin-top: 10px;
+    float: right;
+}
+
+.submit {
+    color: fuchsia;
+}
+
+.gif-div {
+    float: left;
+    margin: 20px;
+}
